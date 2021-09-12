@@ -1,0 +1,52 @@
+.buttons{
+    padding-top: 10vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding-bottom: 7%;
+
+
+
+    .button{
+        width: 2vw;
+        height: 0.5vw;
+        padding: 15px 10px;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: rgb(0, 0, 0) 1px 3px 6px;
+        transition: box-shadow 300ms;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &.selected{
+            transition: box-shadow 300ms;
+            box-shadow: rgb(255, 255, 255) 2px 2px 10px;
+        }
+    }
+
+    .black{
+        border: 1px solid white;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .buttons{
+        padding-top: 10vh;
+        width: 100%;
+        padding-bottom: 0%;
+    
+        .button{
+            width: 5vw;
+            margin: 2vw;
+       
+            &.selected{
+                box-shadow: rgb(255, 255, 255) 2px 2px 15px;
+            }
+        }
+    }
+}

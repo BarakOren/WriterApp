@@ -1,0 +1,146 @@
+.savedPage{
+    margin-top: 15vh;
+
+    .noSavings{
+        margin-top: 10vw;
+        font-size: 3vw;
+        color: #3e3e3e;
+    }
+
+    .arrow{
+        position: fixed;
+        color: white;
+        top: 20vh;
+        left: 10vw;
+    }
+
+    .pieces{
+    
+    .piece{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vw;  
+
+        .outline{
+            position: absolute;
+            -webkit-mask-box-image: url("../../assets/outline.png");
+            height: 15vw;
+            width: 45vw;
+            z-index: 3;
+        }
+
+        .fill{
+            position: absolute;
+            -webkit-mask-box-image: url("../../assets/fill.png");
+            height: 15vw;
+            width: 45vw;
+            z-index: 2;
+        }
+
+        .background{
+            position: absolute;
+            -webkit-mask-box-image: url("../../assets/background.png");
+            height: 15vw;
+            width: 45vw;
+            z-index: 1;
+        }
+
+        .highlights{
+            position: absolute;
+            -webkit-mask-box-image: url("../../assets/highlights.png");
+            height: 15vw;
+            width: 45vw;
+            z-index: 4;
+        }
+
+        .force{
+            position: absolute;
+            -webkit-mask-box-image: url("../../assets/powerline.png");
+            height: 15vw;
+            width: 45vw;
+            z-index: 2;
+        }
+
+        .whiteBackground{
+            position: absolute;
+            z-index: 0;
+            border-radius: 50px;
+            transition: 500ms;
+            background-color: rgba(255, 255, 255, 0.658);
+            width: 44vw;
+            height: 15vw;
+        }
+        
+        .remove{
+            position: absolute;
+            z-index: 6;
+            left: 25vw;
+            cursor: pointer;
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .savedPage{
+        margin: 10vh 0 4vh 0;
+    
+        .noSavings{
+            margin-top: 10vw;
+            font-size: 7vw;
+            color: #3e3e3e;
+        }
+    
+        .arrow{
+            top: 3.5vh;
+            left: 20vw;
+        }
+    
+        .pieces{
+        
+        .piece{
+            padding: 18vw;  
+    
+            .outline{
+                height: 33vw;
+                width: 90vw;
+            }
+    
+            .fill{
+                height: 33vw;
+                width: 90vw;
+            }
+    
+            .background{
+                height: 33vw;
+                width: 90vw;
+            }
+    
+            .highlights{
+                height: 33vw;
+                width: 90vw;
+            }
+    
+            .force{
+                height: 33vw;
+                width: 90vw;
+
+            }
+    
+            .whiteBackground{
+                height: 35vw;
+                width: 93vw;
+            }
+            
+            .remove{
+                position: absolute;
+                z-index: 6;
+                left: 5vw;
+                cursor: pointer;
+            }
+        }
+        }
+    }
+}

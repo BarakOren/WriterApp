@@ -1,0 +1,178 @@
+.homepage {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+
+    .first{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+
+            .title{
+                margin: 15vh 5vw 0 0;
+                font-size: 7vw;
+                font-weight: 200;
+            }
+
+            .subtitle{
+                font-size: 2vw;
+                margin: 2vh 0 0 10vw;
+            }
+        }
+    
+        .right {
+            width: 50%;
+    
+            .iphone {
+                width: 30vw;
+            }
+    
+            .comingsoon{
+                display: flex;
+                justify-content: space-evenly;
+                
+        
+                .box{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding: 1vw 2vw;
+                    border: 1px solid #616161;
+                    border-radius: 25px;
+            
+                    .coming{
+                        margin: 0;
+                        font-size: 1.2vw;
+                        color: #616161;
+                    }
+            
+                    .icon{
+                        margin: 0 0.5vw 0 0;
+                        padding-bottom: 0vw;
+                    }
+                }
+            }
+    
+        }
+
+    }
+
+
+.second{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .intro{
+        width: 70%;
+    }
+}
+
+
+.enjoyWebVersion{
+    
+    text-decoration: none;
+    padding: 1vh 2vw;
+    background-color: #423f47;
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(255, 27, 141);
+    box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+        box-shadow: rgb(255, 27, 141) 0px 0px 20px;
+    }
+
+}
+}
+
+@media only screen and (max-width: 800px){
+    .homepage {
+        margin-top: 5vh;
+        
+    
+        .first{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .left{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+    
+    
+                .title{
+                    margin: 5vh 0 0 0;
+                    font-size: 15vw;
+                    font-weight: 200;
+                }
+    
+                .subtitle{
+                    font-size: 6vw;
+                    margin: 2vh 0 0 0;
+                }
+            }
+        
+            .right {
+                width: 100%;
+        
+                .iphone {
+                    width: 90vw;
+                }
+        
+                .comingsoon{
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+            
+                    .box{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        max-width: 45vw;
+                        justify-content: space-evenly;
+                        padding: 1vw 2.5vw;
+                        border: 1px solid #616161;
+                        border-radius: 25px;
+                
+                        .coming{
+                            margin: 0;
+                            font-size: 3.5vw;
+                            color: #616161;
+                        }
+                
+                        .icon{
+                            margin: 0 1vw 0 0;
+                        }
+                    }
+                }
+        
+            }
+    
+        }
+    
+    
+    .second{
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .enjoyWebVersion{
+        padding: 1vh 5vw;
+    }
+    }
+}
