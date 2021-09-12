@@ -59,7 +59,7 @@ const HomePage = () => {
 
 
 
-            <Link className="enjoyWebVersion" onClick={() => goToWebVersion()} to="/web-version">Enjoy The Web-Version</Link>
+            <Link className="enjoyWebVersion" onClick={() => goToWebVersion()} to="/WriterApp/web-version">Enjoy The Web-Version</Link>
 
             
         </div>

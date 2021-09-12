@@ -15,10 +15,10 @@ const Menu = () => {
 
             <div className={`menu ${toggler}`}>
                 <div className="itemContainer">
-                    <Link to="/" onClick={() => setMenuToggle(false)} className="menuItem">Home</Link>
-                    <Link to="/about" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
-                    <Link to="/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</Link>
-                    <Link to="/web-version" onClick={() => setMenuToggle(false)} className="menuItem">Web-Version</Link>
+                    <Link to="/WriterApp/" onClick={() => setMenuToggle(false)} className="menuItem">Home</Link>
+                    <Link to="/WriterApp/about" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
+                    <Link to="/WriterApp/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</Link>
+                    <Link to="/WriterApp/web-version" onClick={() => setMenuToggle(false)} className="menuItem">Web-Version</Link>
             </div>
 
         </div>

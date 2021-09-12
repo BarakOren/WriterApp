@@ -27,11 +27,11 @@ function App() {
         width < 800 ? <Menu /> : <Header />
       }
       <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/web-version" component={WebVesrion} />
-      <Route exact path="/saved" component={SavedPage} />
+      <Route exact path="/WriterApp" component={HomePage} />
+      <Route exact path="/WriterApp/about" component={About} />
+      <Route exact path="/WriterApp/contact" component={Contact} />
+      <Route exact path="/WriterApp/web-version" component={WebVesrion} />
+      <Route exact path="/WriterApp/saved" component={SavedPage} />
       </Switch>
     </div>
   );

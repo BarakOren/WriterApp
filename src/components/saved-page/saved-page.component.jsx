@@ -32,7 +32,7 @@ const SavedPage = () => {
     return(
         <div className="savedPage">
         <h1>My Savings</h1>
-        <Link to="/web-version">
+        <Link to="/WriterApp/web-version">
         <ArrowBackIosIcon className="arrow" style={{ fontSize: sizer(), color: grey[0] }}/>
         </Link>
         <div className="pieces">

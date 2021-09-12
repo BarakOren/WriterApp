@@ -185,7 +185,7 @@ const WebVesrion = () => {
                     onClick={() => schemeSaver()}
                     style={{borderColor: outline, backgroundColor: fill, color: outline }}
                     >Save Scheme</button>
-                    <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/saved" className="saveButton colors">My Savings</Link>
+                    <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/WriterApp/saved" className="saveButton colors">My Savings</Link>
                     
             </div>
         </div>

@@ -21,16 +21,15 @@ const Header = () => {
             window.addEventListener('resize', handleResize)
         },[dimensions])
 
-
     return(
         <div>    
             <div className="header">
             <p className="name">Writer App</p>
             <div className="items">
-            <Link style={{color: styleOne}} to="/" className="headerItem">Home</Link>
-            <Link style={{color: styleTwo}} to="/about" className="headerItem">About</Link>
-            <Link style={{color: styleThree}} to="/contact" className="headerItem">Contact</Link>
-            <Link style={{color: styleFour}} to="/web-version" className="headerItem">Web-version</Link>
+            <Link style={{color: styleOne}} to="/WriterApp" className="headerItem">Home</Link>
+            <Link style={{color: styleTwo}} to="/WriterApp/about" className="headerItem">About</Link>
+            <Link style={{color: styleThree}} to="/WriterApp/contact" className="headerItem">Contact</Link>
+            <Link style={{color: styleFour}} to="/WriterApp/web-version" className="headerItem">Web-version</Link>
             </div>
             </div>
         </div>
