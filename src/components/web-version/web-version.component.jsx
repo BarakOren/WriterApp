@@ -97,7 +97,6 @@ const WebVesrion = () => {
         }
     },[])
 
-    const width = window.innerWidth;
 
     return(
         <div className="webVersion">

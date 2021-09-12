@@ -7,11 +7,6 @@ import { useLocation } from "react-router";
 const Header = () => {
 
     const location = useLocation().pathname;
-    
-    const styleOne = (location === "/") ? "white" : "";
-    const styleTwo = (location === "/about") ? "white" : "";
-    const styleThree = (location === "/contact") ? "white" : "";
-    const styleFour = (location === "/web-version" || location === "/saved") ? "white" : "";
 
         const [dimensions, setDimensions] = useState(window.innerWidth)
         useEffect(() => {
@@ -26,10 +21,10 @@ const Header = () => {
             <div className="header">
             <p className="name">Writer App</p>
             <div className="items">
-            <Link style={{color: styleOne}} to="/WriterApp" className="headerItem">Home</Link>
-            <Link style={{color: styleTwo}} to="/WriterApp/about" className="headerItem">About</Link>
-            <Link style={{color: styleThree}} to="/WriterApp/contact" className="headerItem">Contact</Link>
-            <Link style={{color: styleFour}} to="/WriterApp/web-version" className="headerItem">Web-version</Link>
+            <Link style={{color: location === "/WriterApp" ? "white" : ""}} to="/WriterApp" className="headerItem">Home</Link>
+            <Link style={{color: location === "/WriterApp/about" ? "white" : ""}} to="/WriterApp/about" className="headerItem">About</Link>
+            <Link style={{color: location === "/WriterApp/contact" ? "white" : ""}} to="/WriterApp/contact" className="headerItem">Contact</Link>
+            <Link style={{color: location === "/WriterApp/web-version" || location === "/WriterApp/saved" ? "white" : ""}} to="/WriterApp/web-version" className="headerItem">Web-version</Link>
             </div>
             </div>
         </div>
