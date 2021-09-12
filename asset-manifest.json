@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/WriterApp/static/css/main.f591c8a1.chunk.css",
+    "main.js": "/WriterApp/static/js/main.297c7713.chunk.js",
+    "main.js.map": "/WriterApp/static/js/main.297c7713.chunk.js.map",
+    "runtime-main.js": "/WriterApp/static/js/runtime-main.1e25d61c.js",
+    "runtime-main.js.map": "/WriterApp/static/js/runtime-main.1e25d61c.js.map",
+    "static/js/2.de05cb4c.chunk.js": "/WriterApp/static/js/2.de05cb4c.chunk.js",
+    "static/js/2.de05cb4c.chunk.js.map": "/WriterApp/static/js/2.de05cb4c.chunk.js.map",
+    "static/js/3.79c2594b.chunk.js": "/WriterApp/static/js/3.79c2594b.chunk.js",
+    "static/js/3.79c2594b.chunk.js.map": "/WriterApp/static/js/3.79c2594b.chunk.js.map",
+    "index.html": "/WriterApp/index.html",
+    "static/css/main.f591c8a1.chunk.css.map": "/WriterApp/static/css/main.f591c8a1.chunk.css.map",
+    "static/js/2.de05cb4c.chunk.js.LICENSE.txt": "/WriterApp/static/js/2.de05cb4c.chunk.js.LICENSE.txt",
+    "static/media/saved-page.styles.scss": "/WriterApp/static/media/powerline.7ddc7828.png",
+    "static/media/noshadow.7460b23f.png": "/WriterApp/static/media/noshadow.7460b23f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e25d61c.js",
+    "static/js/2.de05cb4c.chunk.js",
+    "static/css/main.f591c8a1.chunk.css",
+    "static/js/main.297c7713.chunk.js"
+  ]
+}
