@@ -8,23 +8,15 @@ const Header = () => {
 
     const location = useLocation().pathname;
 
-        const [dimensions, setDimensions] = useState(window.innerWidth)
-        useEffect(() => {
-          function handleResize() {
-            setDimensions(window.innerWidth)    
-            }
-            window.addEventListener('resize', handleResize)
-        },[dimensions])
-
     return(
         <div>    
             <div className="header">
             <p className="name">Writer App</p>
             <div className="items">
-            <Link style={{color: location === "/WriterApp" ? "white" : ""}} to="/WriterApp" className="headerItem">Home</Link>
-            <Link style={{color: location === "/WriterApp/about" ? "white" : ""}} to="/WriterApp/about" className="headerItem">About</Link>
-            <Link style={{color: location === "/WriterApp/contact" ? "white" : ""}} to="/WriterApp/contact" className="headerItem">Contact</Link>
-            <Link style={{color: location === "/WriterApp/web-version" || location === "/WriterApp/saved" ? "white" : ""}} to="/WriterApp/web-version" className="headerItem">Web-version</Link>
+            <Link style={{color: location === "/" ? "white" : ""}} to="/" className="headerItem">Home</Link>
+            <Link style={{color: location === "/about" ? "white" : ""}} to="/about" className="headerItem">About</Link>
+            <Link style={{color: location === "/contact" ? "white" : ""}} to="/contact" className="headerItem">Contact</Link>
+            <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} style={{color: location === "/web-version" || location === "/saved" ? "white" : ""}} to="/web-version" className="headerItem">Web-version</Link>
             </div>
             </div>
         </div>

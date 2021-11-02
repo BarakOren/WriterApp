@@ -94,7 +94,7 @@
             background-color: #423f47;
             color: white;
             text-align: center;
-            border: 2px solid rgb(255, 255, 255);
+            border: 2px solid rgb(139, 139, 139);
             box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
             border-radius: 50px;
             cursor: pointer;
@@ -121,7 +121,8 @@
         }
 
         .selectedCategory{
-            box-shadow: rgb(255, 255, 255) 0px 0px 10px;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: rgb(255, 255, 255) 0px 0px 15px;
         }
 
 
@@ -152,7 +153,8 @@
         }
 
         .selectedPressureCategory{
-            box-shadow: rgb(139, 139, 139) 0px 0px 10px;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: rgb(255, 255, 255) 0px 0px 15px;
         }
     }
 

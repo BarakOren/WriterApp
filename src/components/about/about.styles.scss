@@ -8,11 +8,26 @@
 
     .aboutText{
         width: 70%;
+        font-size: 1.5vw;
+
+        .title{
+            font-size: 3vw;
+        }
     }
 }
 
 @media only screen and (max-width: 800px){
     .about{
         margin: 5vh 0 0 0;
+
+
+
+        .aboutText{
+            font-size: 4vw;
+            
+            .title{
+                font-size: 10vw;
+            }
+        }
     }
 }

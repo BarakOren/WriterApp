@@ -17,10 +17,10 @@ const Menu = () => {
 
             <div className={`menu ${toggler}`}>
                 <div className="itemContainer">
-                    <Link style={{color: location === "/WriterApp" ? "white" : "", borderColor: location === "/WriterApp" ? "white" : ""}} to="/WriterApp" onClick={() => setMenuToggle(false)} className="menuItem">Home</Link>
-                    <Link style={{color: location === "/WriterApp/about" ? "white" : "", borderColor: location === "/WriterApp/about" ? "white" : ""}} to="/WriterApp/about" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
-                    <Link style={{color: location === "/WriterApp/contact" ? "white" : "", borderColor: location === "/WriterApp/contact" ? "white" : ""}} to="/WriterApp/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</Link>
-                    <Link style={{color: location === "/WriterApp/web-version" || location === "/WriterApp/saved" ? "white" : "", borderColor: location === "/WriterApp/web-version" ? "white" : "" || location === "/WriterApp/saved" ? "white" : ""}} to="/WriterApp/web-version" onClick={() => setMenuToggle(false)} className="menuItem">Web-Version</Link>
+                    <Link style={{color: location === "/" ? "white" : "", borderColor: location === "/" ? "white" : ""}} to="/" onClick={() => setMenuToggle(false)} className="menuItem">Home</Link>
+                    <Link style={{color: location === "/about" ? "white" : "", borderColor: location === "/about" ? "white" : ""}} to="/about" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
+                    <Link style={{color: location === "/contact" ? "white" : "", borderColor: location === "/contact" ? "white" : ""}} to="/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</Link>
+                    <Link style={{color: location === "/web-version" || location === "/saved" ? "white" : "", borderColor: location === "/web-version" ? "white" : "" || location === "/saved" ? "white" : ""}} to="/web-version" onClick={() => setMenuToggle(false)} className="menuItem">Web-Version</Link>
             </div>
 
         </div>

@@ -97,7 +97,6 @@ const WebVesrion = () => {
         }
     },[])
 
-
     return(
         <div className="webVersion">
             
@@ -151,8 +150,8 @@ const WebVesrion = () => {
                     <div style={{borderBottom: "1px solid #3e3e3e", width: "90%"}}></div>
                     
                     <div className="switchPressureButtons">
-                    <button onClick={() => dispatch(selectPressure("highPressure"))} className={`${PressureState === "highPressure" ? "selectedPressureCategory" : ""} switchPressureButton`}>High Pressure</button>
-                    <button onClick={() => dispatch(selectPressure("lowPressure"))} className={`${PressureState === "lowPressure" ? "selectedPressureCategory" : ""} switchPressureButton`}>Low Pressure</button>
+                    <button onClick={() => dispatch(selectPressure("highPressure"))} className={`${PressureState === "highPressure" ? "selectedPressureCategory" : ""} switchPressureButton`}>High Pressure Cans</button>
+                    <button onClick={() => dispatch(selectPressure("lowPressure"))} className={`${PressureState === "lowPressure" ? "selectedPressureCategory" : ""} switchPressureButton`}>Low Pressure Cans</button>
                     
                     </div>
 
@@ -184,7 +183,7 @@ const WebVesrion = () => {
                     onClick={() => schemeSaver()}
                     style={{borderColor: outline, backgroundColor: fill, color: outline }}
                     >Save Scheme</button>
-                    <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/WriterApp/saved" className="saveButton colors">My Savings</Link>
+                    <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/saved" className="saveButton colors">My Savings</Link>
                     
             </div>
         </div>

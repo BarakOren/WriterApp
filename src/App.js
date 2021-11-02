@@ -11,27 +11,16 @@ import Menu from "./components/menu/menu.component";
 
 function App() {
 
-  const [width, setWidth] = useState(window.innerWidth)
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth)    
-      }
-      window.addEventListener('resize', handleResize)
-  },[width])
-
-
-
   return (
     <div className="App">
-      {
-        width < 800 ? <Menu /> : <Header />
-      }
+      <Menu />
+      <Header />
       <Switch>
-      <Route exact path="/WriterApp" component={HomePage} />
-      <Route exact path="/WriterApp/about" component={About} />
-      <Route exact path="/WriterApp/contact" component={Contact} />
-      <Route exact path="/WriterApp/web-version" component={WebVesrion} />
-      <Route exact path="/WriterApp/saved" component={SavedPage} />
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/web-version" component={WebVesrion} />
+      <Route exact path="/saved" component={SavedPage} />
       </Switch>
     </div>
   );

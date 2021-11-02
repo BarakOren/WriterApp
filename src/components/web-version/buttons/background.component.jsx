@@ -7,7 +7,7 @@ import {selectBackground} from "../../../redux/web-version/web-version.actions";
 
 
 const Background = () =>{   
-
+    
         const dispatch = useDispatch();
 
         const selectedButton = useSelector(state => state.webVersionReducer.background);

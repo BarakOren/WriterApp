@@ -13,18 +13,10 @@ const SavedPage = () => {
     
     const dispatch = useDispatch();
 
-    const [width, setWidth] = useState(window.innerWidth)
-    useEffect(() => {
-      function handleResize() {
-        setWidth(window.innerWidth)    
-        }
-        window.addEventListener('resize', handleResize)
-    },[width])
-
     function sizer(){
-        if(width > 800){
+        if(window.innerWidth > 800){
             return 50
-        } else if(width < 800){
+        } else if(window.innerWidth < 800){
             return 30
         }
     }
@@ -32,7 +24,7 @@ const SavedPage = () => {
     return(
         <div className="savedPage">
         <h1>My Savings</h1>
-        <Link to="/WriterApp/web-version">
+        <Link to="/web-version">
         <ArrowBackIosIcon className="arrow" style={{ fontSize: sizer(), color: grey[0] }}/>
         </Link>
         <div className="pieces">

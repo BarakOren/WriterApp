@@ -7,6 +7,10 @@
     align-items: center;
     cursor: default;
 
+    .title{
+        font-size: 3vw;
+    }
+
         .contactContainer{
             margin-top: 10vh;
             width: 100%;
@@ -39,6 +43,10 @@
 @media only screen and (max-width: 800px){
     .contact {
         margin-top: 5vh;
+
+        .title{
+            font-size: 10vw;
+        }
     
             .contactContainer{
                 margin-top: 0vh;

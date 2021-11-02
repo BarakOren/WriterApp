@@ -19,11 +19,11 @@ const Contact = () => {
 
     return(
         <div className="contact">
-            <h1 className="contactme">Get In Touch</h1>
+            <h1 className="title">Get In Touch</h1>
             <div className="contactContainer">
             <div className="email">
             <EmailIcon style={{fontSize: sizer(), color: pink[600]}}/>
-            <p style={{margin: "0 0 0 20px"}}>writerapp@gmail.com</p>
+            <p style={{margin: "0 0 0 20px"}}>writerapp02@gmail.com</p>
             </div>
             <div className="email">
             <InstagramIcon style={{fontSize: sizer(), color: grey[600]}}/>

@@ -43,13 +43,17 @@
                     align-items: center;
                     justify-content: space-evenly;
                     padding: 1vw 2vw;
-                    border: 1px solid #616161;
+                    border: 1px solid #ffffff;
                     border-radius: 25px;
+                    background-color: #0c0c0c;
+                    cursor: pointer;
+
+                   
             
                     .coming{
                         margin: 0;
                         font-size: 1.2vw;
-                        color: #616161;
+                        color: #ffffff;
                     }
             
                     .icon{
@@ -73,9 +77,27 @@
     
     
     .intro{
-        width: 70%;
+        font-size: 1.5vw;
+        width: 80%;
     }
 }
+
+// .images{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+
+//     .image{
+//         border-radius: 10px;
+//         opacity: 0.7;
+//         width: 50%;
+//         height: 50vh;
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//     }
+// }
 
 
 .enjoyWebVersion{
@@ -134,24 +156,16 @@
                 }
         
                 .comingsoon{
-                    display: flex;
-                    justify-content: space-evenly;
-                    
+       
             
                     .box{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
                         max-width: 45vw;
-                        justify-content: space-evenly;
-                        padding: 1vw 2.5vw;
-                        border: 1px solid #616161;
-                        border-radius: 25px;
+                        width: 35vw;
+                        padding: 2vw 2.5vw;
                 
                         .coming{
                             margin: 0;
                             font-size: 3.5vw;
-                            color: #616161;
                         }
                 
                         .icon{
@@ -168,8 +182,15 @@
     .second{
         margin-top: 3vh;
         margin-bottom: 5vh;
+        
+        .intro{
+            font-size: 4vw;
+        }
+        
     }
-    
+
+
+
     
     .enjoyWebVersion{
         padding: 1vh 5vw;
