@@ -1,11 +1,9 @@
 import React from "react";
 import "./homepage.styles.scss";
 import Iphone from "../../assets/noshadow.png";
-import AppleIcon from '@material-ui/icons/Apple';
 import ShopIcon from '@material-ui/icons/Shop';
 import LanguageIcon from '@material-ui/icons/Language';
 import grey from '@material-ui/core/colors/grey';
-import {Link} from "react-router-dom";
 import { useHistory } from "react-router";
 
 

@@ -10,12 +10,8 @@ const INITIAL_STATE = {
 }
 
 function removeSchemeFunction(saved, selectedItem){
-    
-    const itemToRemove = saved.find(
-    item => item === selectedItem);
-    
+    const itemToRemove = saved.find(item => item === selectedItem);
     const newArray = saved.filter((item) => item !== itemToRemove);
-
     return newArray;
 }
 
