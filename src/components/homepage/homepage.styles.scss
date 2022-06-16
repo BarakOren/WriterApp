@@ -1,199 +1,235 @@
 .homepage {
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-
-    .first{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        .left{
-            width: 50%;
-            display: flex;
-            justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-            .title{
-                margin: 15vh 5vw 0 0;
-                font-size: 7vw;
-                font-weight: 200;
-            }
+.left{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+}
 
-            .subtitle{
-                font-size: 2vw;
-                margin: 2vh 0 0 10vw;
-            }
-        }
+.title{
+    margin: 0;
+    font-size: 6vw;
+    transform: scaleY(1.2);
+    font-weight: 800;
+    white-space: nowrap;
+
+}
+
+.subtitle{
+    margin: 0 0 0 10px;
+    font-size: 2vw;
+    font-weight: 800;
+}
     
-        .right {
-            width: 50%;
-    
-            .iphone {
-                width: 30vw;
-            }
-    
-            .comingsoon{
-                display: flex;
-                justify-content: space-evenly;
-                
-        
-                .box{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    padding: 1vw 2vw;
-                    border: 1px solid #ffffff;
-                    border-radius: 25px;
-                    background-color: #0c0c0c;
-                    cursor: pointer;
-
-                   
-            
-                    .coming{
-                        margin: 0;
-                        font-size: 1.2vw;
-                        color: #ffffff;
-                    }
-            
-                    .icon{
-                        margin: 0 0.5vw 0 0;
-                        padding-bottom: 0vw;
-                    }
-                }
-            }
-    
-        }
-
-    }
-
-
-.second{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+.right {
+    width: 30%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    .intro{
-        font-size: 1.5vw;
-        width: 80%;
-    }
 }
 
-// .images{
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
+.image-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
-//     .image{
-//         border-radius: 10px;
-//         opacity: 0.7;
-//         width: 50%;
-//         height: 50vh;
-//         background-size: cover;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//     }
-// }
+.iphone {
+    z-index: 1;
+    width: 100%;
+}
 
-
-.enjoyWebVersion{
-    
-    text-decoration: none;
-    padding: 1vh 2vw;
-    background-color: #423f47;
+.free{
+    z-index: 3;
+    background: linear-gradient(90deg, #FF7966 0%, #FF4126 100%);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-90%);
+    right: 30px;
     color: white;
-    text-align: center;
-    border: 2px solid rgb(255, 27, 141);
-    box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
-    border-radius: 50px;
+    font-size: 1.5vw;
+    padding: 5px 20px;
+    box-shadow: 0 0 30px #ff786685;
+}
+
+.cubes-container{
+    z-index: -4;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile-cubes-container{
+    display: none;
+}
+
+.fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1C1C23 10%, #ff3f2600 100%);
+}
+
+.cubes {
+    z-index: -2;
+    width: 100%;
+    height: auto;
+}
+    
+.link-buttons{
+    width: 50%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+}                
+
+.link-button{
+    border: none;
+    background: linear-gradient(90deg, #FF7966 0%, #FF4126 100%);
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5vw;
+    padding: 10px 30px;
     cursor: pointer;
-    transition: all 0.5s ease 0s;
-
-    &:hover {
-        box-shadow: rgb(255, 27, 141) 0px 0px 20px;
+    box-shadow: 0 0 30px #ff786685;
+    transition: .2s all;
+    &:hover{
+        box-shadow: 0 0 30px #ff7866; 
     }
+}
+                
+.intro{
+width: 80%;
+}
 
+.intro p {
+font-size: 1.5vw;
 }
-}
+              
+.color-bomb-top{
+    z-index: -3;
+    width: 1200px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    top: -35px;
+    left: -450px;
+    background: #FF7966;
+    opacity: 0.25;
+    filter: blur(104px);
+    transform: rotate(48.11deg);
+}  
+        
+  
 
 @media only screen and (max-width: 800px){
-    .homepage {
-        margin-top: 5vh;
-        
-    
-        .first{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            .left{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-    
-    
-                .title{
-                    margin: 5vh 0 0 0;
-                    font-size: 15vw;
-                    font-weight: 200;
-                }
-    
-                .subtitle{
-                    font-size: 6vw;
-                    margin: 2vh 0 0 0;
-                }
-            }
-        
-            .right {
-                width: 100%;
-        
-                .iphone {
-                    width: 90vw;
-                }
-        
-                .comingsoon{
-       
-            
-                    .box{
-                        max-width: 45vw;
-                        width: 35vw;
-                        padding: 2vw 2.5vw;
-                
-                        .coming{
-                            margin: 0;
-                            font-size: 3.5vw;
-                        }
-                
-                        .icon{
-                            margin: 0 1vw 0 0;
-                        }
-                    }
-                }
-        
-            }
-    
-        }
-    
-    
-    .second{
-        margin-top: 3vh;
-        margin-bottom: 5vh;
-        
-        .intro{
-            font-size: 4vw;
-        }
-        
-    }
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
-
+.left{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
     
-    .enjoyWebVersion{
-        padding: 1vh 5vw;
-    }
-    }
+.title{
+    margin: 0;
+    font-size: 13vw;
+}
+    
+.subtitle{
+    font-size: 6vw;
+    margin-bottom: 50px;
+
+}
+
+.link-buttons{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}                
+
+.link-button{
+    font-size: 3vw;
+}
+        
+.right {
+width: 100%;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.iphone {
+    width: 100%;
+}
+        
+.box{
+    max-width: 45vw;
+    width: 35vw;
+    padding: 2vw 2.5vw;
+}
+
+.intro{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.intro p {
+    font-size: 3vw;
+}
+
+
+.cubes-container{
+    display: none;
+}
+
+.mobile-cubes-container{
+    display: unset;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -3;
+}
+
+.fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cubes {
+    z-index: -2;
+    width: 100%;
+    height: auto;
+}
+        
 }
