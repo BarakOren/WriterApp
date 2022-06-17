@@ -1,5 +1,6 @@
 import React from "react";
 import "./homepage.styles.scss";
+import "./media.scss"
 import Iphone from "../../assets/noshadow.png";
 import { useHistory } from "react-router";
 import iphone from "../../assets/iPhone.png"
@@ -41,16 +42,12 @@ const HomePage = () => {
                         <img className="iphone" src={iphone} alt="iphone" />
                     </div>
                     <div class="cubes-container">
-                        <div className="fader"></div>
-                        <img className="cubes" src={cubes} alt="effect" />
-                    </div>
-                    <div class="mobile-cubes-container">
-                        <div className="fader"></div>
-                        <img className="cubes" src={cubes} alt="effect" />
-                    </div>
+                            <div className="fader"></div>
+                            <img className="cubes" src={cubes} alt="effect" />
+                        </div>
+             
                     </div>
 
-            {/* first end */}
             
         </div>
     )

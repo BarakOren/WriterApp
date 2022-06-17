@@ -1,0 +1,34 @@
+.bottom-nav {
+    position: fixed;
+    z-index: 15;
+    bottom: 5vh;
+    width: 70%;
+    padding: 1% 5%;
+    background-color: var(--grey-one);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.bottom-nav > * {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 600;
+    padding: 3px 3%;
+    transition: .2s background-color, box-shadow;
+    border-radius: 15px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.selected {
+    background: linear-gradient(90deg, #FF7966 0%, #FF4126 100%);
+    box-shadow: 0px 0px 10px var(--orange-one);
+}

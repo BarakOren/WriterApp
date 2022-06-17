@@ -9,13 +9,13 @@ const Header = () => {
     const location = useLocation().pathname;
 
     return(
-        <div className="header" style={{backgroundColor: location === "/" ?  "unset" : "#1C1C23"}}>
+        <div className="header" style={{backgroundColor: location === "/" ?  "unset" : "var(--bg)"}}>
             <p className="name">Writer App</p>
-            <div class="center">
+            <div className="center">
             <Link style={{color: location === "/" ? "white" : ""}} to="/" className="headerItem">Home</Link>
             <Link style={{color: location === "/about" ? "white" : ""}} to="/about" className="headerItem">About</Link>
             </div>
-            <Link class="web-version" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} style={{color: location === "/web-version" || location === "/saved" ? "white" : ""}} to="/web-version" className="headerItem">Web-version</Link>
+            <Link className="web-version" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} style={{color: location === "/web-version" || location === "/saved" ? "white" : ""}} to="/web-version" >Web-version</Link>
         </div>
 
     )

@@ -1,3 +1,7 @@
+.container {
+    display: none;
+}
+
 .hamburger{
     z-index: 9;
     position: fixed;
@@ -5,7 +9,6 @@
     left: 5%;
     transition: transform 200ms;
     cursor: pointer;
-    display: none;
 }
 
 .menu {
@@ -16,8 +19,7 @@
     top: 0;
     left: 0;
     transition: left 0.8s ease;
-    background-color: #000000;
-    display: none;
+    background-color: var(--bg);
 
     
     .itemContainer{
@@ -41,17 +43,10 @@
     }
 }
 
-.hidden {
-    left: -101vw;
-}
+
 
 @media only screen and (max-width: 800px){
-    .hamburger{
-        display: initial
+    .container {
+        display: initial;
     }
-
-    .menu{
-        display: initial
-    }
-
 }

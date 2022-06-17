@@ -11,6 +11,9 @@ import HighLights from "./buttons/highLights.component";
 import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import BottomNav from "./bottom-nav/bottom-nav";
+import Settings from "./settings/settings"
+
 
 const WebVesrion = () => {
 
@@ -62,6 +65,7 @@ const WebVesrion = () => {
 
     return(
         <div className="webVersion">
+            <BottomNav />
             <div className="piece">
                 {showHighlights && <div className={`${(position ? "smaller" : "")} highlights`} style={{backgroundColor: highlights}} />}
                 {showPowerLine && <div className={`${(position ? "smaller" : "")} force`} style={{backgroundColor: powerline}} /> }
@@ -76,14 +80,10 @@ const WebVesrion = () => {
             {categoryState === "background" && <Background />}   
             {categoryState === "powerline" && <ForceLine />}   
             {categoryState === "highlights" && <HighLights />}   
-            <div className="settings">
-                <div className="switchButtons">
-                    <button onClick={() => dispatch(selectCategory("outline"))} className={`${categoryState === "outline" ? "selectedCategory" : ""} switchButton`}>Outline</button>
-                    <button onClick={() => dispatch(selectCategory("fill"))} className={`${categoryState === "fill" ? "selectedCategory" : ""} switchButton`}>Fill</button>
-                    <button onClick={() => dispatch(selectCategory("background"))} className={`${categoryState === "background" ? "selectedCategory" : ""} switchButton`}>Background</button>
-                    <button onClick={() => dispatch(selectCategory("powerline"))} disabled={!showPowerLine} className={`${categoryState === "powerline" && showPowerLine === true ? "selectedCategory" : ""} ${showPowerLine ? "switchButton" : "switchButtonOff"}`}>Power-line</button>
-                    <button onClick={() => dispatch(selectCategory("highlights"))} className={`${categoryState === "highlights" && showHighlights === true ? "selectedCategory" : ""} ${showHighlights ? "switchButton" : "switchButtonOff"}`}>Highlights</button>
-                </div>
+
+            <Settings showHighlights={showHighlights} setShowHighlights={setShowHighlights} showPowerLine={showPowerLine} setShowPowerLine={setShowPowerLine} />
+            {/* <div className="settings">
+             
                     
                 <p style={{color: "#3e3e3e", margin: "1.5vh"}}>Settings</p>
                 <div style={{borderBottom: "1px solid #3e3e3e", width: "90%"}}></div>
@@ -106,13 +106,26 @@ const WebVesrion = () => {
                  
                 <button className="saveButton" onClick={() => schemeSaver()} style={{borderColor: outline, backgroundColor: fill, color: outline }}>Save Scheme</button>
                 <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/saved" className="saveButton colors">My Savings</Link>
-                    
-            </div>
+                       
+            </div> */}
+
+
+            {/* <div className="switchButtons">
+                    <button onClick={() => dispatch(selectCategory("outline"))} className={`${categoryState === "outline" ? "selectedCategory" : ""} switchButton`}>Outline</button>
+                    <button onClick={() => dispatch(selectCategory("fill"))} className={`${categoryState === "fill" ? "selectedCategory" : ""} switchButton`}>Fill</button>
+                    <button onClick={() => dispatch(selectCategory("background"))} className={`${categoryState === "background" ? "selectedCategory" : ""} switchButton`}>Background</button>
+                    <button onClick={() => dispatch(selectCategory("powerline"))} disabled={!showPowerLine} className={`${categoryState === "powerline" && showPowerLine === true ? "selectedCategory" : ""} ${showPowerLine ? "switchButton" : "switchButtonOff"}`}>Power-line</button>
+                    <button onClick={() => dispatch(selectCategory("highlights"))} className={`${categoryState === "highlights" && showHighlights === true ? "selectedCategory" : ""} ${showHighlights ? "switchButton" : "switchButtonOff"}`}>Highlights</button>
+                </div> */}
         </div>
+        
     )
 
 
         
 }
 
+
+
 export default WebVesrion;
+

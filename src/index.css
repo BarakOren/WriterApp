@@ -1,6 +1,16 @@
+:root {
+  /* --text-light-brown: #d3b47c; */
+  --bg: #16161b;
+  --bg-zero: #16161b00;
+  --orange-one: #FF7966;
+  --orange-two: #FF4126;
+  --grey-one: #2D2D39;
+}
+
 body {
   margin: 0 0;
-  background-color: #1C1C23;
+  background-color: var(--bg);
+  overflow-x: hidden;
   color: white;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;

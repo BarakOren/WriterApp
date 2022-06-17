@@ -1,204 +1,206 @@
 .webVersion{
-    margin-top: 15vw;
+margin-top: 15vw;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+.piece{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 
-    .piece{
-        // z-index: 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
+.outline{
+position: fixed;
+-webkit-mask-box-image: url("../../assets/outline.png");
+height: 15vw;
+width: 45vw;
+z-index: 4;
+transition: background-color 300ms, height 500ms, width 500ms;
+}
 
-        .outline{
-            position: fixed;
-            -webkit-mask-box-image: url("../../assets/outline.png");
-            height: 15vw;
-            width: 45vw;
-            z-index: 4;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
+.fill{
+position: fixed;
+-webkit-mask-box-image: url("../../assets/fill.png");
+height: 15vw;
+width: 45vw;
+z-index: 2;
+transition: background-color 300ms, height 500ms, width 500ms;
+}
 
-        .fill{
-            position: fixed;
-            -webkit-mask-box-image: url("../../assets/fill.png");
-            height: 15vw;
-            width: 45vw;
-            z-index: 2;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
+.background{
+position: fixed;
+-webkit-mask-box-image: url("../../assets/background.png");
+height: 15vw;
+width: 45vw;
+z-index: 1;
+transition: background-color 300ms, height 500ms, width 500ms;
+}
 
-        .background{
-            position: fixed;
-            -webkit-mask-box-image: url("../../assets/background.png");
-            height: 15vw;
-            width: 45vw;
-            z-index: 1;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
+.highlights{
+position: fixed;
+-webkit-mask-box-image: url("../../assets/highlights.png");
+height: 15vw;
+width: 45vw;
+z-index: 4;
+transition: background-color 300ms, height 500ms, width 500ms;
+}
 
-        .highlights{
-            position: fixed;
-            -webkit-mask-box-image: url("../../assets/highlights.png");
-            height: 15vw;
-            width: 45vw;
-            z-index: 4;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
+.force{
+position: fixed;
+-webkit-mask-box-image: url("../../assets/powerline.png");
+height: 15vw;
+width: 45vw;
+z-index: 2;
+transition: background-color 300ms, height 500ms, width 500ms;
+}
 
-        .force{
-            position: fixed;
-            -webkit-mask-box-image: url("../../assets/powerline.png");
-            height: 15vw;
-            width: 45vw;
-            z-index: 2;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
+.whiteBackground{
+position: fixed;
+z-index: 0;
+border-radius: 50px;
+transition: 500ms;
+background-color: rgba(255, 255, 255, 0.658);
+width: 44vw;
+height: 15vw;
+}
 
-        .whiteBackground{
-            position: fixed;
-            z-index: 0;
-            border-radius: 50px;
-            transition: 500ms;
-            background-color: rgba(255, 255, 255, 0.658);
-            width: 44vw;
-            height: 15vw;
-        }
-        
-        .smaller{
-            height: 12vw;
-            width: 39vw;
-            transition: background-color 300ms, height 500ms, width 500ms;
-        }
-    }
-
-   
-
-    .settings{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    .switchButtons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 90%;
-        margin: 2vh 0;
-
-        .switchButton{
-            font-size: 1.5vw;
-            padding: 1vh 2vw;
-            width: 15%;
-            background-color: #423f47;
-            color: white;
-            text-align: center;
-            border: 2px solid rgb(139, 139, 139);
-            box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 300ms;
-
-            &:active{
-                transform: scale(0.98);
-                transition: scale 300ms;
-            }
-        }
-
-        .switchButtonOff{
-            font-size: 1.5vw;
-            padding: 1vh 2vw;
-            width: 15%;
-            background-color: #3d3a4171;
-            color: rgba(255, 255, 255, 0.61);
-            text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.555);
-            box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 300ms;
-        }
-
-        .selectedCategory{
-            border: 2px solid rgb(255, 255, 255);
-            box-shadow: rgb(255, 255, 255) 0px 0px 15px;
-        }
-
-
-    }
-
-    .switchPressureButtons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 80%;
-        margin: 4vh 0;
-
-        .switchPressureButton{
-            padding: 1vh 2vw;
-            font-size: 1.3vw;
-            background-color: #3e3d3f;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            border: 2px solid rgb(139, 139, 139);
-            box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
-            border-radius: 50px;
-            cursor: pointer;
-            
-            &:active{
-                transform: scale(0.98);
-                transition: scale 300ms;
-            }
-        }
-
-        .selectedPressureCategory{
-            border: 2px solid rgb(255, 255, 255);
-            box-shadow: rgb(255, 255, 255) 0px 0px 15px;
-        }
-    }
-
-    .switchesContainer{
-        display: flex;
-        border: 2px solid rgb(139, 139, 139);
-        flex-direction: row;
-        justify-content: space-evenly ;
-        border-radius: 50px;
-        background-color: #3e3d3f;
-        padding: 0 1vw 0 3vw;
-        margin: 2vh 0;
-        
-        .switchLabel{
-            margin-right: 1vw;
-            font-size: 1.1vw;
-        }
-    }
-
-    .saveButton{
-        padding: 1vh 2vw;
-        font-size: 1.3vw;
-        text-align: center;
-        border-radius: 50px;
-        cursor: pointer;
-        margin: 2vh 0;
-
-        
-        &:active{
-            transform: scale(0.98);
-            transition: scale 300ms;
-        }
-    }
-    
-    .colors{
-        border: 2px solid rgb(139, 139, 139);
-        background-color: #3e3d3f;
-        color: white;
-        text-decoration: none;
-    }
+.smaller{
+height: 12vw;
+width: 39vw;
+transition: background-color 300ms, height 500ms, width 500ms;
 }
 
 
+
+// .settings{
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// width: 90%;
+
+// }
+
+.switchButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 90%;
+margin: 2vh 0;
 }
+
+.switchButton{
+font-size: 1.5vw;
+padding: 1vh 2vw;
+width: 15%;
+background-color: #423f47;
+color: white;
+text-align: center;
+border: 2px solid rgb(139, 139, 139);
+box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+border-radius: 50px;
+cursor: pointer;
+transition: 300ms;
+
+&:active{
+transform: scale(0.98);
+transition: scale 300ms;
+}
+}
+
+.switchButtonOff{
+font-size: 1.5vw;
+padding: 1vh 2vw;
+width: 15%;
+background-color: #3d3a4171;
+color: rgba(255, 255, 255, 0.61);
+text-align: center;
+border: 2px solid rgba(255, 255, 255, 0.555);
+box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+border-radius: 50px;
+cursor: pointer;
+transition: 300ms;
+}
+
+.selectedCategory{
+border: 2px solid rgb(255, 255, 255);
+box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+}
+
+
+.switchPressureButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 80%;
+margin: 4vh 0;
+
+}
+
+.switchPressureButton{
+padding: 1vh 2vw;
+font-size: 1.3vw;
+background-color: #3e3d3f;
+color: rgb(255, 255, 255);
+text-align: center;
+border: 2px solid rgb(139, 139, 139);
+box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+border-radius: 50px;
+cursor: pointer;
+
+&:active{
+transform: scale(0.98);
+transition: scale 300ms;
+}
+}
+
+.selectedPressureCategory{
+border: 2px solid rgb(255, 255, 255);
+box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+}
+
+.switchesContainer{
+display: flex;
+border: 2px solid rgb(139, 139, 139);
+flex-direction: row;
+justify-content: space-evenly ;
+border-radius: 50px;
+background-color: #3e3d3f;
+padding: 0 1vw 0 3vw;
+margin: 2vh 0;
+
+.switchLabel{
+margin-right: 1vw;
+font-size: 1.1vw;
+}
+}
+
+.saveButton{
+padding: 1vh 2vw;
+font-size: 1.3vw;
+text-align: center;
+border-radius: 50px;
+cursor: pointer;
+margin: 2vh 0;
+
+&:active{
+transform: scale(0.98);
+transition: scale 300ms;
+}
+}
+
+.colors{
+border: 2px solid rgb(139, 139, 139);
+background-color: #3e3d3f;
+color: white;
+text-decoration: none;
+}
+
+
 
 ::-webkit-scrollbar-corner {
     background-color: #000000;

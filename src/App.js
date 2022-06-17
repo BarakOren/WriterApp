@@ -12,7 +12,7 @@ import Menu from "./components/menu/menu.component";
 function App() {
 
   return (
-    <div className="App">
+    <div>
       <Menu />
       <Header />
       <Switch>

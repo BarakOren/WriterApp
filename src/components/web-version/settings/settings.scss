@@ -1,0 +1,43 @@
+.settings {
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.settings-title {
+    font-size: 3vw;
+    color: var(--grey-one);
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row > * {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pressure-button {
+    color: white;
+    background-color: var(--grey-one);
+    padding: 0.8vw 2.3vw;
+    font-size: 1.5vw;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.selected-pressure {
+    box-shadow: 0px 0px 10px var(--orange-one);
+}
