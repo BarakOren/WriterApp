@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/WriterApp/static/css/main.b02e26eb.chunk.css",
-    "main.js": "/WriterApp/static/js/main.6803a6dc.chunk.js",
-    "main.js.map": "/WriterApp/static/js/main.6803a6dc.chunk.js.map",
-    "runtime-main.js": "/WriterApp/static/js/runtime-main.1e25d61c.js",
-    "runtime-main.js.map": "/WriterApp/static/js/runtime-main.1e25d61c.js.map",
-    "static/js/2.f6b384fe.chunk.js": "/WriterApp/static/js/2.f6b384fe.chunk.js",
-    "static/js/2.f6b384fe.chunk.js.map": "/WriterApp/static/js/2.f6b384fe.chunk.js.map",
-    "static/js/3.79c2594b.chunk.js": "/WriterApp/static/js/3.79c2594b.chunk.js",
-    "static/js/3.79c2594b.chunk.js.map": "/WriterApp/static/js/3.79c2594b.chunk.js.map",
+    "main.css": "/WriterApp/static/css/main.aa4471ac.chunk.css",
+    "main.js": "/WriterApp/static/js/main.73594b1f.chunk.js",
+    "main.js.map": "/WriterApp/static/js/main.73594b1f.chunk.js.map",
+    "runtime-main.js": "/WriterApp/static/js/runtime-main.8ab0afe6.js",
+    "runtime-main.js.map": "/WriterApp/static/js/runtime-main.8ab0afe6.js.map",
+    "static/js/2.8d7c8eaf.chunk.js": "/WriterApp/static/js/2.8d7c8eaf.chunk.js",
+    "static/js/2.8d7c8eaf.chunk.js.map": "/WriterApp/static/js/2.8d7c8eaf.chunk.js.map",
+    "static/js/3.6015fe08.chunk.js": "/WriterApp/static/js/3.6015fe08.chunk.js",
+    "static/js/3.6015fe08.chunk.js.map": "/WriterApp/static/js/3.6015fe08.chunk.js.map",
     "index.html": "/WriterApp/index.html",
-    "static/css/main.b02e26eb.chunk.css.map": "/WriterApp/static/css/main.b02e26eb.chunk.css.map",
-    "static/js/2.f6b384fe.chunk.js.LICENSE.txt": "/WriterApp/static/js/2.f6b384fe.chunk.js.LICENSE.txt",
+    "static/css/main.aa4471ac.chunk.css.map": "/WriterApp/static/css/main.aa4471ac.chunk.css.map",
+    "static/js/2.8d7c8eaf.chunk.js.LICENSE.txt": "/WriterApp/static/js/2.8d7c8eaf.chunk.js.LICENSE.txt",
+    "static/media/Cubes.c0bb3803.png": "/WriterApp/static/media/Cubes.c0bb3803.png",
     "static/media/saved-page.styles.scss": "/WriterApp/static/media/powerline.7ddc7828.png",
+    "static/media/iPhone.d7c8edf9.png": "/WriterApp/static/media/iPhone.d7c8edf9.png",
     "static/media/noshadow.7460b23f.png": "/WriterApp/static/media/noshadow.7460b23f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e25d61c.js",
-    "static/js/2.f6b384fe.chunk.js",
-    "static/css/main.b02e26eb.chunk.css",
-    "static/js/main.6803a6dc.chunk.js"
+    "static/js/runtime-main.8ab0afe6.js",
+    "static/js/2.8d7c8eaf.chunk.js",
+    "static/css/main.aa4471ac.chunk.css",
+    "static/js/main.73594b1f.chunk.js"
   ]
 }
