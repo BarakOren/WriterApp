@@ -4,10 +4,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 14vh;
+    position: relative;
 }
 
 .settings-title {
     font-size: 3vw;
+    margin: 1vw 0;
     color: var(--grey-one);
 }
 
@@ -16,6 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1vw 0; 
+    border-top:2px solid var(--grey-one);
+    border-bottom: 2px solid var(--grey-one);
 }
 
 .row > * {
@@ -36,8 +42,172 @@
     font-weight: 500;
     cursor: pointer;
     transition: .2s all;
+
+    &:hover {
+        box-shadow: 0px 0px 10px #ff786688;
+    }
+
 }
 
 .selected-pressure {
     box-shadow: 0px 0px 10px var(--orange-one);
+    &:hover {
+        box-shadow: 0px 0px 15px var(--orange-one);
+    }
+}
+
+.saveButton {
+    font-size: 1.5vw;
+    width: 20%;
+    padding: 1vw 0;
+    border: 1px solid #61616D;
+    color: white;
+    background-color: var(--grey-one);
+    border-radius: 6px;
+    margin: 1vw 0;
+    cursor: pointer;
+    transition: .2s all;
+
+    &:hover {
+        box-shadow: 0 0 20px #61616D;
+    }
+}
+
+.mySavingsLink {
+    text-decoration: none;
+    padding: 1vw 2vw;
+    border: 1px solid #61616D;
+    color: white;
+    background-color: var(--grey-one);
+    border-radius: 6px;
+    margin: 1vw 0;
+    cursor: pointer;
+    transition: .2s all;
+
+    &:hover {
+        box-shadow: 0 0 20px #61616D;
+    }
+}
+
+.settings-color-bomb {
+    position: absolute;
+        z-index: -3;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--orange-one);
+        opacity: 0.20;
+        filter: blur(200px);
+}
+
+
+@media only screen and (max-width: 800px){ 
+
+    .settings-title {
+  font-size: 5vw;
+    }
+    
+    .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 0; 
+        flex-wrap: wrap;
+        
+    }
+    
+    .row > * {
+        padding: 2vw 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .pressure-button {
+    width: 40%;
+    font-size: 4vw;
+    }
+    
+  label {
+      font-size: 4vw;
+  }
+    
+    .saveButton {
+     font-size: 4vw;
+     width: 50%;
+    margin: 2vw 0;
+    }
+    
+    .mySavingsLink {
+     
+        font-size: 4vw; 
+    }
+    
+    .settings-color-bomb {
+        width: 70vw;
+        height: 70vw;
+        filter: blur(250px);
+    }
+}
+
+
+@media only screen and (max-width: 420px){ 
+
+
+.settings {
+    margin-bottom: 10vh;
+}
+    .settings-title {
+  font-size: 5vw;
+    }
+    
+    .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 0; 
+        flex-wrap: wrap;
+        
+    }
+    
+    .row > * {
+        padding: 2vw 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .pressure-button {
+    width: 40%;
+    font-size: 4vw;
+    }
+    
+  label {
+      font-size: 4vw;
+  }
+    
+    .saveButton {
+     font-size: 4vw;
+     width: 50%;
+    margin: 2vw 0;
+    }
+    
+    .mySavingsLink {
+     
+        font-size: 4vw; 
+    }
+    
+    .settings-color-bomb {
+        width: 100vw;
+        height: 100vw;
+    }
 }

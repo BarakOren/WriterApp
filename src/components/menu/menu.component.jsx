@@ -19,9 +19,8 @@ const Menu = () => {
                     <Link style={{color: location === "/" ? "white" : "", borderColor: location === "/" ? "white" : ""}} to="/" onClick={() => setMenuToggle(false)} className="menuItem">Home</Link>
                     <Link style={{color: location === "/about" ? "white" : "", borderColor: location === "/about" ? "white" : ""}} to="/about" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
                     <Link style={{color: location === "/web-version" || location === "/saved" ? "white" : "", borderColor: location === "/web-version" ? "white" : "" || location === "/saved" ? "white" : ""}} to="/web-version" onClick={() => setMenuToggle(false)} className="menuItem">Web-Version</Link>
-            </div>
-
-        </div>
+                </div>
+            </div> 
         </div>
     )
 }

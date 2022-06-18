@@ -53,3 +53,42 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 420px){ 
+    .switch {
+        width: 50px;
+        height: 20px;
+        }
+          
+    
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+          
+        input:checked + .slider {
+            background: linear-gradient(90deg, #FF7966 0%, #FF4126 100%);
+        }
+          
+        input:checked + .slider:before {
+            -webkit-transform: translateX(30px);
+            -ms-transform: translateX(30px);
+            transform: translateX(30px);
+        }
+          
+          /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+          
+        .slider.round:before {
+            border-radius: 50%;
+        }
+}

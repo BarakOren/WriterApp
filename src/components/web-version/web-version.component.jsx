@@ -65,7 +65,7 @@ const WebVesrion = () => {
 
     return(
         <div className="webVersion">
-            <BottomNav />
+            <BottomNav showPowerLine={showPowerLine} showHighlights={showHighlights} />
             <div className="piece">
                 {showHighlights && <div className={`${(position ? "smaller" : "")} highlights`} style={{backgroundColor: highlights}} />}
                 {showPowerLine && <div className={`${(position ? "smaller" : "")} force`} style={{backgroundColor: powerline}} /> }
@@ -81,7 +81,7 @@ const WebVesrion = () => {
             {categoryState === "powerline" && <ForceLine />}   
             {categoryState === "highlights" && <HighLights />}   
 
-            <Settings showHighlights={showHighlights} setShowHighlights={setShowHighlights} showPowerLine={showPowerLine} setShowPowerLine={setShowPowerLine} />
+            <Settings schemeSaver={schemeSaver} showHighlights={showHighlights} setShowHighlights={setShowHighlights} showPowerLine={showPowerLine} setShowPowerLine={setShowPowerLine} />
             {/* <div className="settings">
              
                     

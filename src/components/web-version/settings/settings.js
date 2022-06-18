@@ -3,9 +3,10 @@ import "./settings.scss";
 import Switch from "./switch/switch"
 import { useSelector, useDispatch } from "react-redux";
 import { selectPressure } from "../../../redux/web-version/web-version.actions";
+import { Link } from "react-router-dom";
 
 const Settings = (props) => {
-    const {showHighlights, setShowHighlights, showPowerLine, setShowPowerLine} = props
+    const {schemeSaver, showHighlights, setShowHighlights, showPowerLine, setShowPowerLine} = props
     const dispatch = useDispatch()
     const PressureState = useSelector(state => state.webVersionReducer.pressure);
 
@@ -23,8 +24,10 @@ const Settings = (props) => {
                     <label for="highlightsswitch">Highlights</label>
                     <Switch state={showHighlights} func={setShowHighlights} />
                 </div>
-
             </div>
+            <button className="saveButton" onClick={() => schemeSaver()}>Save Scheme</button>
+            <Link onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} to="/saved" className="mySavingsLink">My Savings</Link>
+       <div className="settings-color-bomb"></div>
         </div>
     )
 }

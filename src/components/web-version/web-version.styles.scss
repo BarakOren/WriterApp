@@ -11,6 +11,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+transition: .1s all;
 }
 
 .outline{
@@ -179,19 +180,19 @@ font-size: 1.1vw;
 }
 }
 
-.saveButton{
-padding: 1vh 2vw;
-font-size: 1.3vw;
-text-align: center;
-border-radius: 50px;
-cursor: pointer;
-margin: 2vh 0;
+// .saveButton{
+// padding: 1vh 2vw;
+// font-size: 1.3vw;
+// text-align: center;
+// border-radius: 50px;
+// cursor: pointer;
+// margin: 2vh 0;
 
-&:active{
-transform: scale(0.98);
-transition: scale 300ms;
-}
-}
+// &:active{
+// transform: scale(0.98);
+// transition: scale 300ms;
+// }
+// }
 
 .colors{
 border: 2px solid rgb(139, 139, 139);
@@ -320,12 +321,12 @@ text-decoration: none;
             }
         }
     
-        .saveButton{
-            font-size: 4vw;
-            margin: 1vh 3vw;
-            padding: 1vh 0;
-            width: 40%;
-        }
+        // .saveButton{
+        //     font-size: 4vw;
+        //     margin: 1vh 3vw;
+        //     padding: 1vh 0;
+        //     width: 40%;
+        // }
         
         .colors{
             border: 2px solid rgb(139, 139, 139);
